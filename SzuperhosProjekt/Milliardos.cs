@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace SzuperhosProjekt
 {
-    internal interface Milliardos
+    public interface Milliardos
     {
+        public void KutyutKeszit();
     }
 }

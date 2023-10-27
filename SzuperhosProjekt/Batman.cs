@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SzuperhosProjekt
 {
-    internal class Batman
+    public class Batman
     {
     }
 }
