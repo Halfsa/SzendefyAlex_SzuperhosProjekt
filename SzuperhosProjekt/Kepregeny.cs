@@ -9,7 +9,7 @@ namespace SzuperhosProjekt
 {
     public static class Kepregeny
     {
-        public static List<ISzuperhos> szuperhosok = new List<ISzuperhos>();
+        public static List<ISzuperhos> szuperhosok;
         public static void Szereplok(string fajlnev)
         {
             StreamReader sr = new StreamReader(fajlnev);
