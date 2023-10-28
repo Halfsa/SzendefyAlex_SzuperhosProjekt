@@ -10,7 +10,14 @@ namespace SzuperhosProjekt
     {
         private Random RND = new Random();
 
-       
+        public Vasember() : base(0,true)
+        {
+            
+        }
+
+        public Vasember(double szuperero, bool vaEGyengesege) : base(szuperero, vaEGyengesege)
+        {
+        }
 
         public void KutyutKeszit()
         {
@@ -32,10 +39,8 @@ namespace SzuperhosProjekt
         {
             return "Vasember: "+base.ToString();
         }
-        public Vasember()
-        {
-            base.Szuperero = 0;
-            base.VaEGyengesege = true;
-        }
+       
+
+       
     }
 }

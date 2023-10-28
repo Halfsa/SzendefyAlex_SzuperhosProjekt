@@ -17,8 +17,8 @@ namespace SzuperhosProjekt
             this.vaEGyengesege = vaEGyengesege;
         }
 
-        public double Szuperero { get => szuperero; set => szuperero = value; }
-        public bool VaEGyengesege { get => vaEGyengesege; set => vaEGyengesege = value; }
+        public virtual double Szuperero { get => szuperero; set => szuperero = value; }
+        public virtual bool VaEGyengesege { get => vaEGyengesege; set => vaEGyengesege = value; }
 
         public bool LegyoziE(ISzuperhos szuperhos)
         {
