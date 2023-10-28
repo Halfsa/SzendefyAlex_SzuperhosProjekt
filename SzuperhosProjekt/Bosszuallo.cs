@@ -9,16 +9,16 @@ namespace SzuperhosProjekt
     public abstract class Bosszuallo : ISzuperhos
     {
         private double szuperero;
-        private bool vaEGyengesege;
+        private bool VanEGyengesege;
 
         protected Bosszuallo(double szuperero, bool vaEGyengesege)
         {
             this.szuperero = szuperero;
-            this.vaEGyengesege = vaEGyengesege;
+            this.VanEGyengesege = vaEGyengesege;
         }
 
         public virtual double Szuperero { get => szuperero; set => szuperero = value; }
-        public virtual bool VaEGyengesege { get => vaEGyengesege; set => vaEGyengesege = value; }
+        public virtual bool VaEGyengesege { get => VanEGyengesege; set => VanEGyengesege = value; }
 
         public bool LegyoziE(ISzuperhos szuperhos)
         {
@@ -64,7 +64,7 @@ namespace SzuperhosProjekt
         public abstract bool MegmentiAVilagot();
         public override string ToString()
         {
-            return $"Szupererő: {this.MekkoraAzEreje()}; { (vaEGyengesege? "van gyengesége" : "nincs gyengesége")}";
+            return $"Szupererő: {this.MekkoraAzEreje()}; { (VanEGyengesege? "van gyengesége" : "nincs gyengesége")}";
         }
     }
 }

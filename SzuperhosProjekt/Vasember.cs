@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SzuperhosProjekt
 {
-    public class Vasember : Bosszuallo, Milliardos
+    public class Vasember : Bosszuallo, IMilliardos
     {
         private Random RND = new Random();
 

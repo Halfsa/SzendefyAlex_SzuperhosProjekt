@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SzuperhosProjekt
 {
-    public class Batman :ISzuperhos , Milliardos
+    public class Batman :ISzuperhos , IMilliardos
     {
         private double lelemenyesseg;
 
