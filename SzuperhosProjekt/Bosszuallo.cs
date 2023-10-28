@@ -51,10 +51,7 @@ namespace SzuperhosProjekt
                     return false;
                 }
             }
-            else
-            {
-                throw new Exception("Nincs ilyen szuperhős");
-            }
+            return false;
         }
 
         public double MekkoraAzEreje()
