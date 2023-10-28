@@ -9,22 +9,22 @@ namespace SzuperhosProjekt
     public abstract class Bosszuallo : ISzuperhos
     {
         private double szuperero;
-        private bool VanEGyengesege;
+        private bool vanEGyengesege;
 
         protected Bosszuallo(double szuperero, bool vaEGyengesege)
         {
             this.szuperero = szuperero;
-            this.VanEGyengesege = vaEGyengesege;
+            this.vanEGyengesege = vaEGyengesege;
         }
 
         public virtual double Szuperero { get => szuperero; set => szuperero = value; }
-        public virtual bool VaEGyengesege { get => VanEGyengesege; set => VanEGyengesege = value; }
+        public virtual bool VanEGyengesege { get => vanEGyengesege; set => vanEGyengesege = value; }
 
         public bool LegyoziE(ISzuperhos szuperhos)
         {
             if (szuperhos.GetType() == typeof(Bosszuallo))
             {
-                if (((Bosszuallo)szuperhos).VaEGyengesege)
+                if (((Bosszuallo)szuperhos).VanEGyengesege)
                 {
                     if (this.MekkoraAzEreje()>szuperhos.MekkoraAzEreje())
                     {
@@ -64,7 +64,7 @@ namespace SzuperhosProjekt
         public abstract bool MegmentiAVilagot();
         public override string ToString()
         {
-            return $"Szupererő: {this.MekkoraAzEreje()}; { (VanEGyengesege? "van gyengesége" : "nincs gyengesége")}";
+            return $"Szupererő: {this.MekkoraAzEreje()}; { (vanEGyengesege? "van gyengesége" : "nincs gyengesége")}";
         }
     }
 }
