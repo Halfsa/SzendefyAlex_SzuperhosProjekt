@@ -10,7 +10,7 @@ namespace SzuperhosProjekt
     {
         private Random RND = new Random();
 
-        public Vasember() : base(0,true)
+        public Vasember() : base(150,true)
         {
             
         }
