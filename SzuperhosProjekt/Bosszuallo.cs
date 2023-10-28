@@ -22,7 +22,7 @@ namespace SzuperhosProjekt
 
         public bool LegyoziE(ISzuperhos szuperhos)
         {
-            if (szuperhos.GetType() == typeof(Bosszuallo))
+            if (!(szuperhos.GetType() == typeof(Batman)))
             {
                 if (((Bosszuallo)szuperhos).VanEGyengesege)
                 {
