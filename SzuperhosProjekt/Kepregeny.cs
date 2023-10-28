@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace SzuperhosProjekt
 {
-    public class Batman
+    internal class Kepregeny
     {
-        private double lelemenyesseg;
     }
 }

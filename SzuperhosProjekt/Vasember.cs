@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace SzuperhosProjekt
 {
-    public class Vasember : Bosszuallo , Milliardos
+    public class Vasember : Bosszuallo, Milliardos
     {
+        private Random RND = new Random();
+
         public Vasember(double szuperero, bool vaEGyengesege) : base(szuperero, vaEGyengesege)
         {
             szuperero = 150;
@@ -16,12 +18,23 @@ namespace SzuperhosProjekt
 
         public void KutyutKeszit()
         {
-            throw new NotImplementedException();
+            base.Szuperero += RND.NextDouble()*10;
         }
 
         public override bool MegmentiAVilagot()
         {
-            throw new NotImplementedException();
+            if (Szuperero >1000)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public override string ToString()
+        {
+            return "Vasember: "+base.ToString();
         }
     }
 }
